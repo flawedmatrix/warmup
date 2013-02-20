@@ -70,7 +70,7 @@
         $("#login-button").click(function(e) {
             username = $('#login-username').val();
             password = $('#login-password').val();
-            send_json_req("/user/login", {
+            send_json_req("/users/login", {
                 user : username,
                 password : password
                 },
