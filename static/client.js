@@ -30,6 +30,7 @@ function get_err_message(code) {
         return ("The password should be at most 128 characters long. Please try again.");
     } else {
         return ("Something wrong happened with the backend.");
+    }    
 }
 
 $('#login-button').click(function() {
