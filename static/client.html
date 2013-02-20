@@ -87,7 +87,7 @@
         $("#add-user-button").click(function(e) {
             username = $('#login-username').val();
             password = $('#login-password').val();
-            json_request("/users/add", {
+            send_json_req("/users/add", {
                 user : username,
                 password : password
                 },
