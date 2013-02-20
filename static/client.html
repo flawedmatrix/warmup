@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Login!</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
@@ -21,7 +20,7 @@
             </center>
         </div>
 
-        <div id="welcome-page" class="box">
+        <div id="welcome-box" class="box">
             <div id="welcome-message" class="message"></div>
             <center>
                 <form>
@@ -109,16 +108,16 @@
             if (!message) {
                 message = "Please enter your credentials below";
             }
-            $('#welcome-page').hide();
+            $('#welcome-box').hide();
             $('#login-username').val("");
             $('#login-password').val("");
             $('#login-message').html(message);
-            $('#login-page').show()
+            $('#login-box').show()
         }
 
         function show_welcome_page(user, count) {
-            $('#login-page').hide();
-            $('#welcome-page').show();
+            $('#login-box').hide();
+            $('#welcome-box').show();
             $('#welcome-message').html("Welcome " + user + ", you have logged in " + count + " times.");
         }
 
