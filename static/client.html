@@ -92,7 +92,7 @@
                 password : password
                 },
                 function(data) {
-                    return handle_add_user_response(data, username);
+                    return handle_login_response(data, username);
                 },
                 function(err) {
                     console.log("Something wrong happened with the backend.");
